@@ -173,10 +173,36 @@ body{
   flex-wrap: wrap;
   justify-content: center;
   margin: 1rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.5em;
 }
+
 .amenity-class{
   justify-items: center;
-  align-items: center;
   text-transform: capitalize;
   width: 30%;
+  background-color: var(--primary-color);
+  margin: .5em;
+  height: 6em;
+  padding: 1em;
+}
+@media screen and (max-width:79.5em) {
+  .amenity-class{
+    width: 45%;
+  }
+}
+@media screen and (max-width: 52.125em) {
+  .amenity-class{
+    width: 100%;
+  }
+  .available-amenities{
+    font-size: 2em;
+  }
+  
+}
+.amenity-class h1{
+  text-transform: capitalize;
+  font-weight: 200;
+
 }
