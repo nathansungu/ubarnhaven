@@ -187,14 +187,19 @@ body{
   height: 6em;
   padding: 1em;
 }
+.amenity-class h1{
+  margin-bottom: 0.5em;
+}
 @media screen and (max-width:79.5em) {
   .amenity-class{
-    width: 45%;
+    width: 49%;
+    height: fit-content;
   }
+
 }
 @media screen and (max-width: 52.125em) {
   .amenity-class{
-    width: 100%;
+    width: 99%;
   }
   .available-amenities{
     font-size: 2em;
@@ -205,4 +210,24 @@ body{
   text-transform: capitalize;
   font-weight: 200;
 
+}
+
+.about-us-items{
+  display: flex;
+  margin: 0.9em;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+@media screen and (max-width:52.5em) {
+  .about-us-items{
+    display: block;
+  }
+}
+@media screen and (max-width:26.25em) {
+  .about-us-items{
+    margin: 0.1em
+  }
+  
 }
