@@ -60,6 +60,14 @@ body{
   
 
 }
+.menu-items button{
+  background-color: var(--saffron-color);
+
+}
+.menu-items button:hover{
+  transform: scale(1.2);
+  background-color: var(--terxiary-color);
+}
 
 @media screen and ( max-width:55.45em){
   .contacts{
@@ -107,8 +115,16 @@ body{
   background-repeat: no-repeat;
   height: 100vh;
 }
+.title{
+  justify-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 1rem; 
+  
+}
 
-.spaces{
+
+.space-items{
   margin: 1rem;
   text-transform: capitalize;
   display: flex;
@@ -122,7 +138,9 @@ body{
   padding: .5rem;
   justify-items: center;
   align-items: center;
-  
+  border: 3px solid var(--sandy-brown-color);
+  margin: 1rem;
+  border-radius: 1rem;
 }
 .spaces p {
   color: #4A412A;
@@ -135,6 +153,18 @@ body{
 .spaces h2{
   margin: .5rem;
   color: var(--saffron-color);
+  
+}
+@media screen and (max-width:61.625em) {
+  .space-card{
+    width: 45%;
+  }
+  
+}
+@media screen and (max-width:41.38em) {
+  .space-card{
+    width: 95%;
+  }
   
 }
 .available-amenities{
