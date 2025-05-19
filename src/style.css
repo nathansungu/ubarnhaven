@@ -4,6 +4,10 @@
   box-sizing: border-box;
 
 }
+body{
+  margin: 0.1rem;
+  padding: 0.1rem;
+}
 :root{
   --primary-color:#F7E7CE;
   --secondary-color: #FFBF00;
@@ -19,43 +23,80 @@
   width: 100%;
   background-color: var(--primary-color);
 }
+
 .contacts{
   margin: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap:1rem;
-  margin-bottom: 1rem;
+  gap:5px;
+  margin-bottom: .5em;
   
 }
 .phone-no, .email, .location{
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  
 }
 .menu{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 .logo{
   width: 50%;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2em;
   position: relative;
   align-items: center;
 }
 
 .menu-items ul{
-  width: 50%;
   list-style: none; 
   display:flex;
+  gap: 100px;
+  
 
 }
-.menu-items{
+
+@media screen and ( max-width:55.45em){
+  .contacts{
+    margin: 0.3em;
+    gap: .5em;
+  } 
+  .logo{
+    font-weight: 700;
+    font-size: 1.5em;
+    width:40%;
+  }
+  .menu-items ul{
+    gap: 50px;
+  }
+  
+}
+@media screen and (max-width:43.75em){
+  .contacts{
+    margin:0.2em;
+    gap: 0.3em;
+  }
+  .logo{
+    font-weight: 600;
+    font-size: 1.2em;
+    
+  }
+  .menu-items ul{
+    gap: 30px;
+  }
+}
+@media screen and (max-width:34.25em) {
+  .logo{
+    display: none;
+  }
+  .location{
+    display: none;
+  }
   
 }
 .hero-section{
@@ -95,4 +136,17 @@
   margin: .5rem;
   color: var(--saffron-color);
   
+}
+.available-amenities{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem;
+}
+.amenity-class{
+  justify-items: center;
+  align-items: center;
+  text-transform: capitalize;
+  width: 30%;
 }
