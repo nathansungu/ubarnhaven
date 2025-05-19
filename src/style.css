@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+:root{
+  --primary-color:#F7E7CE;
+  --secondary-color: #FFBF00;
+  --terxiary-color:#9F8170;
+  --dark-dark-brown:#4A412A;
+  --sandy-brown-color:#F4A460;
+  --saffron-color:#F4C430;
+}
+.header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+.contacts{
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap:1rem;
+  margin-bottom: 1rem;
+  
+}
+.phone-no, .email, .location{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.logo{
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  position: relative;
+  align-items: center;
+}
+
+.menu-items ul{
+  width: 50%;
+  list-style: none; 
+  display:flex;
+
+}
+.menu-items{
+  
+}
+.hero-section{
+  background-image:linear-gradient(rgba(1, 1, 1, 0.5)),
+    url(/public/herobgi.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.spaces{
+  margin: 1rem;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.space-card{
+  width: 30%;
+  padding: .5rem;
+  justify-items: center;
+  align-items: center;
+  
+}
+.spaces p {
+  color: #4A412A;
+  margin-top: .5rem;
+
+}
+.spaces h1{
+  color: var(--terxiary-color);
+}
+.spaces h2{
+  margin: .5rem;
+  color: var(--saffron-color);
+  
+}
