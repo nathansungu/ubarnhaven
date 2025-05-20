@@ -334,6 +334,12 @@ body{
   }.link h1{
     font-size: 1em;
   }
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .short-about p{
   font-size: 1em;
