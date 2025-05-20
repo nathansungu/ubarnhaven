@@ -108,6 +108,9 @@ body{
   .location{
     display: none;
   }
+  .email{
+    display: none;
+  }
   
 }
 .hero-section{
@@ -190,7 +193,7 @@ body{
 }
 @media screen and (max-width:41.38em) {
   .space-card{
-    width: 95%;
+    width: 97%;
   }
   
 }
