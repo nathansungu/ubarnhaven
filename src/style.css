@@ -15,6 +15,9 @@ body{
   --dark-dark-brown:#4A412A;
   --sandy-brown-color:#F4A460;
   --saffron-color:#F4C430;
+  --footer-color: #0f0e0e;
+  --about-color: #f5ebe0;
+  --color-white:white;
 }
 .header{
   position: sticky;
@@ -114,6 +117,25 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+}
+.hero-text {
+  text-transform: uppercase;
+  font-size: 2em;
+  color:var(--color-white) ;
+  border: 1px solid var(--color-white);
+  height: 70vh;
+}
+
+.hero-text a{
+  text-decoration: none;
+  background-color:var(--sandy-brown-color) ;
+  
 }
 .title{
   justify-items: center;
@@ -121,6 +143,9 @@ body{
   font-weight: 600;
   margin-top: 1rem; 
   
+}
+.main-title{
+  font-size: 2em;
 }
 
 
@@ -141,7 +166,9 @@ body{
   border: 3px solid var(--sandy-brown-color);
   margin: 1rem;
   border-radius: 1rem;
-}
+  font-size: 1.5em;
+};
+
 .spaces p {
   color: #4A412A;
   margin-top: .5rem;
@@ -192,7 +219,7 @@ body{
 }
 @media screen and (max-width:79.5em) {
   .amenity-class{
-    width: 49%;
+    width: 45%;
     height: fit-content;
   }
 
@@ -212,13 +239,47 @@ body{
 
 }
 
+.conctact-us-items{
+  border: 1px solid var(--color-white);
+  background-color: var(--saffron-color);
+  height: 55vh;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;
+  margin: 1rem;
+}
+
+.heading{
+  text-transform: capitalize;
+  font-size: 2em;
+  margin-bottom: .9em;
+}
+.contact-names{
+  display: flex;
+  flex-direction: row;
+}
+.contact-form{
+  text-align: center;
+  gap: 1em;
+}
+.contact-form label{
+  text-transform: capitalize;
+  margin: 1em;
+  font-size: 1.5em;
+}
+
 .about-us-items{
   display: flex;
   margin: 0.9em;
-  font-size: 1.5em;
+  font-size: 2em;
   justify-content: center;
   align-items: center;
   width: 95%;
+  background-image: url(/images/logo.png);
+  background-repeat: no-repeat;
+  background-color: var(--about-color);
 }
 @media screen and (max-width:52.5em) {
   .about-us-items{
@@ -229,5 +290,67 @@ body{
   .about-us-items{
     margin: 0.1em
   }
+  
+}
+.footer{
+  color: white;
+  font-size: 2em;
+  margin-top: 1em;
+  height: fit-content;
+  padding: 1em;
+  background-color: var(--footer-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-content{  
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+.short-about{
+  width: 49%;
+}
+.footer-content h1{
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  text-transform: capitalize;
+}
+@media screen and (max-width:56.625em) {
+  .short-about h1{
+    font-size: 1em;
+  }
+  
+}
+@media screen and (max-width:35em) {
+  .short-about h1{
+     font-size: 1em; 
+
+  }.link h1{
+    font-size: 1em;
+  }
+}
+.short-about p{
+  font-size: 1em;
+}
+.links{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.footer-content a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  display: block;
+
+}
+.message{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #F4A460;
   
 }
