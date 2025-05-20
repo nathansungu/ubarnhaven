@@ -330,6 +330,7 @@ body{
 @media screen and (max-width:35em) {
   .short-about h1{
      font-size: 1em; 
+     margin: 0.2em;
 
   }.link h1{
     font-size: 1em;
@@ -339,6 +340,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .message{
+    text-align: center;
+    
   }
 }
 .short-about p{
